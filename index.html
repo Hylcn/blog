@@ -22,7 +22,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.68.3" />
-<link rel="alternate" type="application/rss&#43;xml" href="https://hylcn.me/index.xml">
+<link rel="alternate" type="application/json" href="https://hylcn.me/index.json">
 
 
 <meta property="og:title" content="Hylcn&#39;s Notwendigkeit" />
@@ -51,14 +51,10 @@
 
 </head>
 
-<body class="list" id="top">
+<body class="list dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -69,33 +65,6 @@
             display: none;
         }
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: #1d1e20;
-                --entry: #2e2e33;
-                --primary: rgba(255, 255, 255, 0.84);
-                --secondary: rgba(255, 255, 255, 0.56);
-                --tertiary: rgba(255, 255, 255, 0.16);
-                --content: rgba(255, 255, 255, 0.74);
-                --hljs-bg: #2e2e33;
-                --code-bg: #37383e;
-                --border: #333;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
     </style>
 
 </noscript>
@@ -128,17 +97,33 @@
                 
             </span>
         </div>
-        <ul id="menu" onscroll="menu_on_scroll()"></ul>
+        <ul id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="https://hylcn.me/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li></ul>
     </nav>
 </header>
 
     <main class="main"> 
 
 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>Hi there</h1>
+    </header>
+    <section class="entry-content">
+        <p>sesulambi</p>
+    </section>
+    <footer class="entry-footer"><div class="social-icons"></div>
+</footer>
+</article>
 
 
 
-<article class="first-entry"> 
+
+<article class="post-entry"> 
 
   <header class="entry-header">
     <h2>
